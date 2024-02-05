@@ -15,8 +15,6 @@ public abstract class ConcretePiece implements Piece {
         this.type = type;
         this.id_piece = id;
         this.id_num = newId;
-        this.kills = kills;
-        this.squares = squares;
 
     }
 
@@ -59,13 +57,9 @@ public abstract class ConcretePiece implements Piece {
         return steps;
     }
 
-
     public int getId_num() {
         return id_num;
     }
 
-    public void setSteps(ArrayList<Position> steps) {
-        this.steps = steps;
-    }
 
 }

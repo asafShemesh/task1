@@ -1,9 +1,10 @@
 public class ConcretePlayer implements Player {
     private boolean defender;
-    public int countWins;
+
+    public int coutWins;
 
     public ConcretePlayer(boolean defender, int countWins) {
-        this.countWins = countWins;
+        this.coutWins = countWins;
         this.defender = defender;
 
     }
@@ -19,11 +20,11 @@ public class ConcretePlayer implements Player {
 
     @Override
     public int getWins() {
-        return countWins;
+        return coutWins;
     }
 
-    public void CountWins(int countWins) {
-        this.countWins += 1;
+    public void setCoutWins(int coutWins) {
+        this.coutWins = coutWins+1;
     }
 
 }
